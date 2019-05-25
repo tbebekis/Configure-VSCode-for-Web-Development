@@ -1,0 +1,29 @@
+{
+  "compileOnSave": true,
+  "typeAcquisition": {
+    "enable": true
+  },
+  "compilerOptions": {
+    "allowJs": true,
+    "noEmit": false,
+    "outDir": "wwwroot/js",
+    "declaration": false,
+    "lib": [ "dom", "es6", "dom.iterable" ],
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": false,
+    "noImplicitUseStrict": true,
+    "noEmitOnError": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "target": "es6"
+  },
+  "files": [
+    "ts/site2.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "wwwroot"
+  ]
+}

@@ -1,0 +1,5 @@
+{    
+    "es6-css-minify.minifyOnSave": "yes",
+    "es6-css-minify.genCSSmap": false,
+    "es6-css-minify.genJSmap": false
+}

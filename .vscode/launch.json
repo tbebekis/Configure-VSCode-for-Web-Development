@@ -1,0 +1,46 @@
+{
+   "version": "0.2.0",
+   "compounds": [
+		{
+			"name": "WebApp and Chrome",
+			"configurations": ["WebApp", "Chrome"],
+		}
+	],   
+   "configurations": [
+        {
+			"name": "WebApp",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "WebApp.build",
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceFolder}/WebApp/bin/Debug/netcoreapp2.1/WebApp.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/WebApp",
+            "stopAtEntry": false,
+            "internalConsoleOptions": "openOnSessionStart",
+            "launchBrowser": {
+                "enabled": false 
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views"
+            }
+        },
+        {
+            "name": "Chrome",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:5000",
+            "webRoot": "${workspaceRoot}/WebApp/wwwroot",
+            "sourceMaps": true
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach",
+            "processId": "${command:pickProcess}"
+        }
+    ]
+}
